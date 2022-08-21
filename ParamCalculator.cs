@@ -109,29 +109,35 @@ namespace ParamCalculator
 
         #endregion
 
-        private void label3_Click(object sender, EventArgs e)
-        {
+        #region Easter Eggs
 
+        private byte _CurrentNumberImage = 0;
+        public byte CurrentNumberImage
+        {
+            get => _CurrentNumberImage;
+            set => _CurrentNumberImage = (byte)(value <= 3 ? value : 0);
         }
 
-        private void label4_Click(object sender, EventArgs e)
+        private void MaxNumberLabel_Click(object sender, EventArgs e)
         {
-
+            switch (CurrentNumberImage)
+            {
+                case 0:
+                    BackgroundImage = Properties.Resources.GagagaCHIII;
+                    break;
+                case 1:
+                    BackgroundImage = Properties.Resources.Stalin;
+                    break;
+                case 2:
+                    BackgroundImage = Properties.Resources.Uganda;
+                    break;
+                case 3:
+                    BackgroundImage = Properties.Resources.Tan;
+                    break;
+            }
+            CurrentNumberImage++;
         }
 
-        private void label6_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label5_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        #endregion
     }
 }
