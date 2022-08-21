@@ -21,5 +21,10 @@ namespace ParamCalculator
         {
 
         }
+
+        private void ParamCalculator_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
