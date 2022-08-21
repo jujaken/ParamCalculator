@@ -36,7 +36,6 @@
             this.NameCharacterTextBox = new System.Windows.Forms.TextBox();
             this.ScreenNumberLabel = new System.Windows.Forms.Label();
             this.MaxNumberTextBox = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.NumberTextBox = new System.Windows.Forms.TextBox();
             this.TimeTextBox = new System.Windows.Forms.TextBox();
             this.DifferenceNumberTextBox = new System.Windows.Forms.TextBox();
@@ -44,7 +43,6 @@
             this.AddButton = new System.Windows.Forms.Button();
             this.RunTimerButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -61,36 +59,36 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(12, 95);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 20);
+            this.label2.Size = new System.Drawing.Size(95, 20);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Макс. число";
+            this.label2.Text = "Макс. число:";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(12, 166);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(66, 20);
+            this.label3.Size = new System.Drawing.Size(145, 20);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Сколько";
+            this.label3.Text = "Сколько добавлять:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(250, 166);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(86, 20);
+            this.label4.Size = new System.Drawing.Size(200, 20);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Во сколько";
+            this.label4.Text = "Через сколько (в секундах):";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(12, 231);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(197, 20);
+            this.label5.Size = new System.Drawing.Size(200, 20);
             this.label5.TabIndex = 4;
-            this.label5.Text = "Сколько отнять/прибавить";
+            this.label5.Text = "Сколько отнять/прибавить:";
             // 
             // NameCharacterTextBox
             // 
@@ -101,15 +99,13 @@
             // 
             // ScreenNumberLabel
             // 
-            this.ScreenNumberLabel.AutoSize = true;
             this.ScreenNumberLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
             this.ScreenNumberLabel.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.ScreenNumberLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.ScreenNumberLabel.Location = new System.Drawing.Point(192, 55);
+            this.ScreenNumberLabel.Location = new System.Drawing.Point(183, 33);
             this.ScreenNumberLabel.Name = "ScreenNumberLabel";
-            this.ScreenNumberLabel.Size = new System.Drawing.Size(269, 72);
+            this.ScreenNumberLabel.Size = new System.Drawing.Size(287, 113);
             this.ScreenNumberLabel.TabIndex = 6;
-            this.ScreenNumberLabel.Text = "Экранчик";
+            this.ScreenNumberLabel.Text = "0";
             this.ScreenNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // MaxNumberTextBox
@@ -118,15 +114,7 @@
             this.MaxNumberTextBox.Name = "MaxNumberTextBox";
             this.MaxNumberTextBox.Size = new System.Drawing.Size(152, 27);
             this.MaxNumberTextBox.TabIndex = 7;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.pictureBox1.Location = new System.Drawing.Point(183, 32);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(287, 113);
-            this.pictureBox1.TabIndex = 8;
-            this.pictureBox1.TabStop = false;
+            this.MaxNumberTextBox.TextChanged += new System.EventHandler(this.MaxNumberTextBox_TextChanged);
             // 
             // NumberTextBox
             // 
@@ -157,6 +145,7 @@
             this.TakeButton.TabIndex = 12;
             this.TakeButton.Text = "Отнять";
             this.TakeButton.UseVisualStyleBackColor = true;
+            this.TakeButton.Click += new System.EventHandler(this.TakeButton_Click);
             // 
             // AddButton
             // 
@@ -166,6 +155,7 @@
             this.AddButton.TabIndex = 13;
             this.AddButton.Text = "Добавить";
             this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
             // 
             // RunTimerButton
             // 
@@ -175,6 +165,7 @@
             this.RunTimerButton.TabIndex = 14;
             this.RunTimerButton.Text = "Запуск и выключение таймера";
             this.RunTimerButton.UseVisualStyleBackColor = true;
+            this.RunTimerButton.Click += new System.EventHandler(this.RunTimerButton_Click);
             // 
             // label6
             // 
@@ -199,7 +190,6 @@
             this.Controls.Add(this.TimeTextBox);
             this.Controls.Add(this.NumberTextBox);
             this.Controls.Add(this.ScreenNumberLabel);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.MaxNumberTextBox);
             this.Controls.Add(this.NameCharacterTextBox);
             this.Controls.Add(this.label5);
@@ -213,7 +203,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ParamCalculator";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -229,7 +218,6 @@
         private TextBox NameCharacterTextBox;
         private Label ScreenNumberLabel;
         private TextBox MaxNumberTextBox;
-        private PictureBox pictureBox1;
         private TextBox NumberTextBox;
         private TextBox TimeTextBox;
         private TextBox DifferenceNumberTextBox;
