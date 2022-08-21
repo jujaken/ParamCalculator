@@ -82,7 +82,6 @@
             this.label4.Size = new System.Drawing.Size(86, 20);
             this.label4.TabIndex = 3;
             this.label4.Text = "Во сколько";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label5
             // 
@@ -99,7 +98,6 @@
             this.NameCharacter.Name = "NameCharacter";
             this.NameCharacter.Size = new System.Drawing.Size(152, 27);
             this.NameCharacter.TabIndex = 5;
-            this.NameCharacter.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
             // Экранчик
             // 
@@ -143,7 +141,6 @@
             this.Time.Name = "Time";
             this.Time.Size = new System.Drawing.Size(220, 27);
             this.Time.TabIndex = 10;
-            this.Time.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
             // 
             // textBox5
             // 
@@ -216,7 +213,6 @@
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ParamCalculator";
-            this.Load += new System.EventHandler(this.ParamCalculator_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
