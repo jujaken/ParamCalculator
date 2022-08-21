@@ -33,16 +33,16 @@
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.NameCharacter = new System.Windows.Forms.TextBox();
-            this.Экранчик = new System.Windows.Forms.Label();
-            this.MaxNumber = new System.Windows.Forms.TextBox();
+            this.NameCharacterTextBox = new System.Windows.Forms.TextBox();
+            this.ScreenNumberLabel = new System.Windows.Forms.Label();
+            this.MaxNumberTextBox = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.Number = new System.Windows.Forms.TextBox();
-            this.Time = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.Take = new System.Windows.Forms.Button();
-            this.Add = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
+            this.NumberTextBox = new System.Windows.Forms.TextBox();
+            this.TimeTextBox = new System.Windows.Forms.TextBox();
+            this.DifferenceNumberTextBox = new System.Windows.Forms.TextBox();
+            this.TakeButton = new System.Windows.Forms.Button();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.RunTimerButton = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -92,32 +92,32 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Сколько отнять/прибавить";
             // 
-            // NameCharacter
+            // NameCharacterTextBox
             // 
-            this.NameCharacter.Location = new System.Drawing.Point(12, 55);
-            this.NameCharacter.Name = "NameCharacter";
-            this.NameCharacter.Size = new System.Drawing.Size(152, 27);
-            this.NameCharacter.TabIndex = 5;
+            this.NameCharacterTextBox.Location = new System.Drawing.Point(12, 55);
+            this.NameCharacterTextBox.Name = "NameCharacterTextBox";
+            this.NameCharacterTextBox.Size = new System.Drawing.Size(152, 27);
+            this.NameCharacterTextBox.TabIndex = 5;
             // 
-            // Экранчик
+            // ScreenNumberLabel
             // 
-            this.Экранчик.AutoSize = true;
-            this.Экранчик.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.Экранчик.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Экранчик.ImageAlign = System.Drawing.ContentAlignment.TopRight;
-            this.Экранчик.Location = new System.Drawing.Point(192, 55);
-            this.Экранчик.Name = "Экранчик";
-            this.Экранчик.Size = new System.Drawing.Size(269, 72);
-            this.Экранчик.TabIndex = 6;
-            this.Экранчик.Text = "Экранчик";
-            this.Экранчик.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ScreenNumberLabel.AutoSize = true;
+            this.ScreenNumberLabel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.ScreenNumberLabel.Font = new System.Drawing.Font("Segoe UI", 32F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ScreenNumberLabel.ImageAlign = System.Drawing.ContentAlignment.TopRight;
+            this.ScreenNumberLabel.Location = new System.Drawing.Point(192, 55);
+            this.ScreenNumberLabel.Name = "ScreenNumberLabel";
+            this.ScreenNumberLabel.Size = new System.Drawing.Size(269, 72);
+            this.ScreenNumberLabel.TabIndex = 6;
+            this.ScreenNumberLabel.Text = "Экранчик";
+            this.ScreenNumberLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MaxNumber
+            // MaxNumberTextBox
             // 
-            this.MaxNumber.Location = new System.Drawing.Point(12, 118);
-            this.MaxNumber.Name = "MaxNumber";
-            this.MaxNumber.Size = new System.Drawing.Size(152, 27);
-            this.MaxNumber.TabIndex = 7;
+            this.MaxNumberTextBox.Location = new System.Drawing.Point(12, 118);
+            this.MaxNumberTextBox.Name = "MaxNumberTextBox";
+            this.MaxNumberTextBox.Size = new System.Drawing.Size(152, 27);
+            this.MaxNumberTextBox.TabIndex = 7;
             // 
             // pictureBox1
             // 
@@ -128,53 +128,53 @@
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
             // 
-            // Number
+            // NumberTextBox
             // 
-            this.Number.Location = new System.Drawing.Point(12, 189);
-            this.Number.Name = "Number";
-            this.Number.Size = new System.Drawing.Size(220, 27);
-            this.Number.TabIndex = 9;
+            this.NumberTextBox.Location = new System.Drawing.Point(12, 189);
+            this.NumberTextBox.Name = "NumberTextBox";
+            this.NumberTextBox.Size = new System.Drawing.Size(220, 27);
+            this.NumberTextBox.TabIndex = 9;
             // 
-            // Time
+            // TimeTextBox
             // 
-            this.Time.Location = new System.Drawing.Point(250, 189);
-            this.Time.Name = "Time";
-            this.Time.Size = new System.Drawing.Size(220, 27);
-            this.Time.TabIndex = 10;
+            this.TimeTextBox.Location = new System.Drawing.Point(250, 189);
+            this.TimeTextBox.Name = "TimeTextBox";
+            this.TimeTextBox.Size = new System.Drawing.Size(220, 27);
+            this.TimeTextBox.TabIndex = 10;
             // 
-            // textBox5
+            // DifferenceNumberTextBox
             // 
-            this.textBox5.Location = new System.Drawing.Point(12, 254);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(220, 27);
-            this.textBox5.TabIndex = 11;
+            this.DifferenceNumberTextBox.Location = new System.Drawing.Point(12, 254);
+            this.DifferenceNumberTextBox.Name = "DifferenceNumberTextBox";
+            this.DifferenceNumberTextBox.Size = new System.Drawing.Size(220, 27);
+            this.DifferenceNumberTextBox.TabIndex = 11;
             // 
-            // Take
+            // TakeButton
             // 
-            this.Take.Location = new System.Drawing.Point(250, 252);
-            this.Take.Name = "Take";
-            this.Take.Size = new System.Drawing.Size(104, 29);
-            this.Take.TabIndex = 12;
-            this.Take.Text = "Отнять";
-            this.Take.UseVisualStyleBackColor = true;
+            this.TakeButton.Location = new System.Drawing.Point(250, 252);
+            this.TakeButton.Name = "TakeButton";
+            this.TakeButton.Size = new System.Drawing.Size(104, 29);
+            this.TakeButton.TabIndex = 12;
+            this.TakeButton.Text = "Отнять";
+            this.TakeButton.UseVisualStyleBackColor = true;
             // 
-            // Add
+            // AddButton
             // 
-            this.Add.Location = new System.Drawing.Point(366, 252);
-            this.Add.Name = "Add";
-            this.Add.Size = new System.Drawing.Size(104, 29);
-            this.Add.TabIndex = 13;
-            this.Add.Text = "Добавить";
-            this.Add.UseVisualStyleBackColor = true;
+            this.AddButton.Location = new System.Drawing.Point(366, 252);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(104, 29);
+            this.AddButton.TabIndex = 13;
+            this.AddButton.Text = "Добавить";
+            this.AddButton.UseVisualStyleBackColor = true;
             // 
-            // button1
+            // RunTimerButton
             // 
-            this.button1.Location = new System.Drawing.Point(12, 335);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(458, 29);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Запуск и выключение таймера";
-            this.button1.UseVisualStyleBackColor = true;
+            this.RunTimerButton.Location = new System.Drawing.Point(12, 335);
+            this.RunTimerButton.Name = "RunTimerButton";
+            this.RunTimerButton.Size = new System.Drawing.Size(458, 29);
+            this.RunTimerButton.TabIndex = 14;
+            this.RunTimerButton.Text = "Запуск и выключение таймера";
+            this.RunTimerButton.UseVisualStyleBackColor = true;
             // 
             // label6
             // 
@@ -192,16 +192,16 @@
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.ClientSize = new System.Drawing.Size(482, 383);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.Add);
-            this.Controls.Add(this.Take);
-            this.Controls.Add(this.textBox5);
-            this.Controls.Add(this.Time);
-            this.Controls.Add(this.Number);
-            this.Controls.Add(this.Экранчик);
+            this.Controls.Add(this.RunTimerButton);
+            this.Controls.Add(this.AddButton);
+            this.Controls.Add(this.TakeButton);
+            this.Controls.Add(this.DifferenceNumberTextBox);
+            this.Controls.Add(this.TimeTextBox);
+            this.Controls.Add(this.NumberTextBox);
+            this.Controls.Add(this.ScreenNumberLabel);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.MaxNumber);
-            this.Controls.Add(this.NameCharacter);
+            this.Controls.Add(this.MaxNumberTextBox);
+            this.Controls.Add(this.NameCharacterTextBox);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -226,16 +226,16 @@
         private Label label3;
         private Label label4;
         private Label label5;
-        private TextBox NameCharacter;
-        private Label Экранчик;
-        private TextBox MaxNumber;
+        private TextBox NameCharacterTextBox;
+        private Label ScreenNumberLabel;
+        private TextBox MaxNumberTextBox;
         private PictureBox pictureBox1;
-        private TextBox Number;
-        private TextBox Time;
-        private TextBox textBox5;
-        private Button Take;
-        private Button Add;
-        private Button button1;
+        private TextBox NumberTextBox;
+        private TextBox TimeTextBox;
+        private TextBox DifferenceNumberTextBox;
+        private Button TakeButton;
+        private Button AddButton;
+        private Button RunTimerButton;
         private Label label6;
     }
 }
