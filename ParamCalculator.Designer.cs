@@ -122,6 +122,7 @@
             this.NumberTextBox.Name = "NumberTextBox";
             this.NumberTextBox.Size = new System.Drawing.Size(220, 27);
             this.NumberTextBox.TabIndex = 9;
+            this.NumberTextBox.TextChanged += new System.EventHandler(this.NumberTextBox_TextChanged);
             // 
             // TimeTextBox
             // 
@@ -129,6 +130,7 @@
             this.TimeTextBox.Name = "TimeTextBox";
             this.TimeTextBox.Size = new System.Drawing.Size(220, 27);
             this.TimeTextBox.TabIndex = 10;
+            this.TimeTextBox.TextChanged += new System.EventHandler(this.TimeTextBox_TextChanged);
             // 
             // DifferenceNumberTextBox
             // 

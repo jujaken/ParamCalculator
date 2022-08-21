@@ -56,16 +56,29 @@ namespace ParamCalculator
 
         #endregion
 
-        private void MaxNumberTextBox_TextChanged(object sender, EventArgs e)
+        #region TextBoxes
+
+        private void NumberTextBox_TextChanged(object sender, EventArgs e) =>
+            SetTextBoxValue(sender, ref Number);
+
+        private void TimeTextBox_TextChanged(object sender, EventArgs e) =>
+            SetTextBoxValue(sender, ref Time);
+
+        private void MaxNumberTextBox_TextChanged(object sender, EventArgs e) =>
+            SetTextBoxValue(sender, ref MaxNumber);
+
+        private void SetTextBoxValue(object textBox, ref uint param)
         {
             try
             {
-                MaxNumber = Convert.ToUInt16(MaxNumberTextBox.Text);
+                param = Convert.ToUInt16((textBox as TextBox ?? throw new Exception()).Text);
             }
             catch
             {
                 MessageBox.Show("Некорректный ввод!", "Ошибка", MessageBoxButtons.OK);
             }
         }
+
+        #endregion
     }
 }
