@@ -45,7 +45,7 @@ namespace ParamCalculator
             {
                 var num = Convert.ToUInt16(DifferenceNumberTextBox.Text);
 
-                if (num >= MaxNumber)
+                if (num > MaxNumber)
                     throw new Exception();
 
                 ScreenNumber += isPositiveNumber ? num : -num;
