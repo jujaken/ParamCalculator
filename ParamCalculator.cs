@@ -67,12 +67,14 @@ namespace ParamCalculator
             {
                 timerIsWork = false;
                 _Timer.Stop();
+                TimerStatusLabel.Text = "Статус таймера: выключен";
             }
             else
             {
                 timerIsWork = true;
                 _Timer.Interval = (int)Time * 1000;
                 _Timer.Start();
+                TimerStatusLabel.Text = "Статус таймера: включён";
             }
         }
 

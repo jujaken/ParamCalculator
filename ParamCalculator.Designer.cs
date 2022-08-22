@@ -42,7 +42,7 @@
             this.TakeButton = new System.Windows.Forms.Button();
             this.AddButton = new System.Windows.Forms.Button();
             this.RunTimerButton = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
+            this.TimerStatusLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -184,16 +184,16 @@
             this.RunTimerButton.UseVisualStyleBackColor = true;
             this.RunTimerButton.Click += new System.EventHandler(this.RunTimerButton_Click);
             // 
-            // label6
+            // TimerStatusLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.label6.Location = new System.Drawing.Point(12, 312);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(193, 20);
-            this.label6.TabIndex = 15;
-            this.label6.Text = "Статус таймера: выключен";
+            this.TimerStatusLabel.AutoSize = true;
+            this.TimerStatusLabel.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.TimerStatusLabel.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.TimerStatusLabel.Location = new System.Drawing.Point(12, 312);
+            this.TimerStatusLabel.Name = "TimerStatusLabel";
+            this.TimerStatusLabel.Size = new System.Drawing.Size(193, 20);
+            this.TimerStatusLabel.TabIndex = 15;
+            this.TimerStatusLabel.Text = "Статус таймера: выключен";
             // 
             // ParamCalculator
             // 
@@ -201,7 +201,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkCyan;
             this.ClientSize = new System.Drawing.Size(482, 383);
-            this.Controls.Add(this.label6);
+            this.Controls.Add(this.TimerStatusLabel);
             this.Controls.Add(this.RunTimerButton);
             this.Controls.Add(this.AddButton);
             this.Controls.Add(this.TakeButton);
@@ -243,6 +243,6 @@
         private Button TakeButton;
         private Button AddButton;
         private Button RunTimerButton;
-        private Label label6;
+        private Label TimerStatusLabel;
     }
 }
